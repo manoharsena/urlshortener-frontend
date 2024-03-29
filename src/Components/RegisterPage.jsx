@@ -40,7 +40,7 @@ const Registerpage = () => {
       // If user doesn't exist, proceed with registration
       // const registerRes = await axios.post('http://localhost:5000/api/user/register', values);
       const registerRes = await axios.post(
-        "https://url-shortener-backend-vx4e.onrender.com/api/user/register",
+        "https://urlshortener-backend-o30n.onrender.com/api/user/register",
         values
       );
       setResponseMsg(registerRes.data.message);

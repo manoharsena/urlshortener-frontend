@@ -15,7 +15,7 @@ const UrlDashboard = () => {
         // Make a GET request to fetch the URL counts
         // const response = await axios.get("http://localhost:5000/api/user/geturlcounts");
         const response = await axios.get(
-          "https://url-shortener-backend-vx4e.onrender.com/api/user/geturlcounts"
+          "https://urlshortener-backend-o30n.onrender.com/api/user/geturlcounts"
         );
         // Extract the dailyCounts and monthlyCount from the response data
         const { dailyCounts, monthlyCount } = response.data;

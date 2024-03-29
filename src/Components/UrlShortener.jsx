@@ -21,7 +21,7 @@ const UrlShortener = ({ email, token }) => {
     try {
       // const res = await axios.post(`http://localhost:5000/api/user/shorturl/${email}`, values);
       const res = await axios.post(
-        `https://url-shortener-backend-vx4e.onrender.com/api/user/shorturl/${email}`,
+        `https://urlshortener-backend-o30n.onrender.com/api/user/shorturl/${email}`,
         values
       );
 

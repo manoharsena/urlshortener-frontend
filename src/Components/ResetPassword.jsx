@@ -18,7 +18,7 @@ const ResetPassword = () => {
     try {
       // let res = await axios.get('http://localhost:5000/api/user/listallusers');
       let res = await axios.get(
-        "https://url-shortener-backend-vx4e.onrender.com/api/user/listallusers"
+        "https://urlshortener-backend-o30n.onrender.com/api/user/listallusers"
       );
 
       if (res.data && res.data.users) {

@@ -25,7 +25,7 @@ const LoginPage = ({ SetUserName, SetEmail, SetToken }) => {
     try {
       // const res = await axios.post('http://localhost:5000/api/user/login', values);
       const res = await axios.post(
-        "https://url-shortener-backend-vx4e.onrender.com/api/user/login",
+        "https://urlshortener-backend-o30n.onrender.com/api/user/login",
         values
       );
 

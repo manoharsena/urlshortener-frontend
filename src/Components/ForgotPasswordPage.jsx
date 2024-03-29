@@ -23,7 +23,7 @@ const ForgotPasswordPage = () => {
     try {
       // const res = await axios.post('http://localhost:5000/api/user/forgotpassword', values);
       const res = await axios.post(
-        "https://url-shortener-backend-vx4e.onrender.com/api/user/forgotpassword",
+        "https://urlshortener-backend-o30n.onrender.com/api/user/forgotpassword",
         values
       );
 
