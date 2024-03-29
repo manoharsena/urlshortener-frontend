@@ -1,0 +1,44 @@
+#logout-btn {
+    border: none;
+    padding: 1em;
+    border-radius: 12px;
+}
+
+.box-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-image: linear-gradient(to right top, #d867d8, #cc58dc, #bc4ae1, #aa3de6, #9232ed, #7e2be4, #6824da, #501dd1, #4015b6, #310d9c, #220682, #130169); */
+    background-image: linear-gradient(to right top, #8e67d8, #5d8bf6, #00a9ff, #00c4ff, #00dbff, #00d4f2, #00cee4, #00c7d7, #00a5c0, #0083a6, #006388, #014569);
+    /* background-image: linear-gradient(to right top, #d16ba5, #c876b8, #bb81c9, #ac8cd6, #9c97e0, #919ee6, #87a5eb, #7cacee, #75b2f2, #6db9f6, #66bff9, #5fc5fb); */
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    padding: 50px 0px;
+    color: #000000;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 16px;
+
+    h1 {
+        font-size: 65px;
+    }
+
+    p {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    button {
+        width: auto;
+        font-size: large;
+        margin-top: 1em;
+        font-weight: 600;
+    }
+
+}
