@@ -16,7 +16,6 @@ const ResetPassword = () => {
 
   const validateToken = async () => {
     try {
-      // let res = await axios.get('http://localhost:5000/api/user/listallusers');
       let res = await axios.get(
         "https://urlshortener-backend-o30n.onrender.com/api/user/listallusers"
       );
@@ -50,7 +49,6 @@ const ResetPassword = () => {
 
   const onSubmit = async (values) => {
     try {
-      // const res = await axios.put('http://localhost:5000/api/user/resetpassword', { ...values, email });
       const res = await axios.put(
         "https://url-shortener-backend-vx4e.onrender.com/api/user/resetpassword",
         { ...values, email }
@@ -126,13 +124,6 @@ const ResetPassword = () => {
                 Set a new password for your account. Choose a strong and unique
                 password to ensure the security of your account.
               </p>
-              {/* <button
-                class="btn transparent"
-                id="sign-up-btn"
-                onClick={toggleMode}
-              >
-                Sign in
-              </button> */}
             </div>
             <img src="/reset.svg" class="image" alt="" />
           </div>

@@ -37,8 +37,6 @@ const Registerpage = () => {
   const onSubmit = async (values) => {
     console.log("Register Api Payloads", values);
     try {
-      // If user doesn't exist, proceed with registration
-      // const registerRes = await axios.post('http://localhost:5000/api/user/register', values);
       const registerRes = await axios.post(
         "https://urlshortener-backend-o30n.onrender.com/api/user/register",
         values
@@ -162,21 +160,6 @@ const Registerpage = () => {
               <button type="submit" className="btn btn-primary">
                 Register
               </button>
-              {/* <p class="social-text">Or Sign up with social platforms</p>
-              <div class="social-media">
-                <a href="#" class="social-icon">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="social-icon">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="social-icon">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a href="#" class="social-icon">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </div> */}
             </form>
           </div>
         </div>

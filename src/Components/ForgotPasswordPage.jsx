@@ -21,7 +21,6 @@ const ForgotPasswordPage = () => {
 
   const onSubmit = async (values) => {
     try {
-      // const res = await axios.post('http://localhost:5000/api/user/forgotpassword', values);
       const res = await axios.post(
         "https://urlshortener-backend-o30n.onrender.com/api/user/forgotpassword",
         values
@@ -74,24 +73,6 @@ const ForgotPasswordPage = () => {
             <button type="submit" class="btn btn-primary">
               Submit
             </button>
-            {/* <Link to='/'>Register</Link> 
-                    <Link to='/login'>Login</Link> */}
-            {/* <Link to='/resetpassword'>reset</Link> */}
-            {/* <p class="social-text">Or Reset Password with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div> */}
           </form>
         </div>
         <div className="panels-container">
@@ -102,22 +83,6 @@ const ForgotPasswordPage = () => {
                 Enter your email-id to reset your password. We'll send you a
                 password reset link to your email.
               </p>
-              {/* <div class="d-flex justify-content-evenly">
-                <button
-                  class="btn transparent"
-                  id="sign-in-btn"
-                  onClick={handleClick}
-                >
-                  Sign In
-                </button>
-                <button
-                  class="btn transparent"
-                  id="sign-up-btn"
-                  onClick={SignupClick}
-                >
-                  Sign up
-                </button>
-              </div> */}
             </div>
             <img src="/forgot.svg" class="image" alt="" />
           </div>

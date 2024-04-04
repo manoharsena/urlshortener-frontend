@@ -11,7 +11,6 @@ const AdminDashboard = ({ token, setResponseData }) => {
 
     const handleView = async () => {
         try {
-            // const res = await axios.get('http://localhost:5000/api/user/authorized', {
             const res = await axios.get('https://urlshortener-backend-o30n.onrender.com/api/user/authorized', {
                 headers: {
                     Authorization: `Bearer ${token}` 
@@ -32,7 +31,6 @@ const AdminDashboard = ({ token, setResponseData }) => {
 
     const handleCheck = async () => {
         try {
-            // const res = await axios.get('http://localhost:5000/api/user/authorized', {
             const res = await axios.get('https://url-shortener-backend-vx4e.onrender.com/api/user/authorized', {
                 headers: {
                     Authorization: `Bearer ${token}` 

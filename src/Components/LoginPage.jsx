@@ -23,7 +23,6 @@ const LoginPage = ({ SetUserName, SetEmail, SetToken }) => {
 
   const onSubmit = async (values) => {
     try {
-      // const res = await axios.post('http://localhost:5000/api/user/login', values);
       const res = await axios.post(
         "https://urlshortener-backend-o30n.onrender.com/api/user/login",
         values
@@ -96,21 +95,6 @@ const LoginPage = ({ SetUserName, SetEmail, SetToken }) => {
                 Forgot Password?
               </Link>
             </div>
-            {/* <p class="social-text">Or Sign in with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div> */}
           </form>
         </div>
       </div>

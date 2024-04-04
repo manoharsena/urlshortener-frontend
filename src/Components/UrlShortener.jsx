@@ -19,7 +19,6 @@ const UrlShortener = ({ email, token }) => {
   });
   const onSubmit = async (values) => {
     try {
-      // const res = await axios.post(`http://localhost:5000/api/user/shorturl/${email}`, values);
       const res = await axios.post(
         `https://urlshortener-backend-o30n.onrender.com/api/user/shorturl/${email}`,
         values
@@ -27,8 +26,7 @@ const UrlShortener = ({ email, token }) => {
 
       setResponseMsg(res.data.message);
       setShortUrl(res.data.shortUrl);
-      // console.log("=>", res.data.shortUrl);
-      // console.log(inputState)
+  
       toast.success(res.data.message);
       setTimeout(() => {
         // navigate('/login')
@@ -83,7 +81,6 @@ const UrlShortener = ({ email, token }) => {
           </div>
           <div>
             <h3>
-              {/* <a href={`http://localhost:5000/api/user/shortid/${shortUrl}`} target="_blank">{shortUrl}</a> */}
               <a
                 href={`https://url-shortener-backend-vx4e.onrender.com/api/user/shortid/${shortUrl}`}
                 target="_blank"

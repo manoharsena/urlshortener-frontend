@@ -26,7 +26,6 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        {/* <a className="navbar-brand">URL-SHORTENER</a> */}
         <Link to="/home" className="navbar-brand">
           URL-SHORTENER
         </Link>

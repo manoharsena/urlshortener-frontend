@@ -3,7 +3,6 @@ import "./Style/HomePage.css";
 import { useNavigate } from "react-router-dom";
 
 const HomePage = ({ username, email }) => {
-  // console.log(email);
   const navigate = useNavigate();
 
   const handleCLick = () => {
@@ -12,7 +11,6 @@ const HomePage = ({ username, email }) => {
   return (
     <div className=" box-container d-flex justify-content-center">
       <div class="card" style={{ width: "50rem" }}>
-        {/* <img src="..." class="card-img-top" alt="..."> */}
         <div class="card-body">
           <h1 class="card-title text-center">Hello {username} !</h1>
           <p class="card-text text-center">

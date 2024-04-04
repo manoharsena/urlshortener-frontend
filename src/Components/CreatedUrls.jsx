@@ -8,8 +8,6 @@ const CreatedUrls = ({ responseData }) => {
         <table className="table table-striped ">
           <thead>
             <tr>
-              {/* <th scope="col">S.No</th> */}
-              {/* <th>Lastname</th> */}
               <th scope="col" className="text-center">
                 Long URL
               </th>
@@ -26,7 +24,6 @@ const CreatedUrls = ({ responseData }) => {
               return item.urls.map((url, urlIndex) => {
                 return (
                   <tr key={urlIndex}>
-                    {/* <td className='text-center'>{index * item.urls.length + urlIndex + 1}</td> */}
                     <td className="text-center">
                       <a href={url.longUrl} target="blank">
                         {url.longUrl}

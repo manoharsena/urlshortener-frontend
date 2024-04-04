@@ -2,9 +2,6 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const UrlDashboard = () => {
-  // const [dailyCounts,setDailyCounts] = useState([])
-  // const [monthlyCount,setMonthlyCount] = useState([])
-
   const [dailyCounts, setDailyCounts] = useState([]);
   const [monthlyCount, setMonthlyCount] = useState([]);
 
@@ -12,8 +9,6 @@ const UrlDashboard = () => {
     // Define a function to fetch the data from the backend
     const fetchData = async () => {
       try {
-        // Make a GET request to fetch the URL counts
-        // const response = await axios.get("http://localhost:5000/api/user/geturlcounts");
         const response = await axios.get(
           "https://urlshortener-backend-o30n.onrender.com/api/user/geturlcounts"
         );
@@ -35,21 +30,6 @@ const UrlDashboard = () => {
   return (
     <div>
       <h2 className="my-5 text-center">Daily Counts</h2>
-      {/* <ul>
-                {dailyCounts.map((item, index) => (
-                    <li key={index}>
-                        {item._id.lastname}: {item.count} URLs on {item._id.date}
-                    </li>
-                ))}
-            </ul>
-            <h2>Monthly Count</h2>
-            <ul>
-                {monthlyCount.map((item, index) => (
-                    <li key={index}>
-                        {item._id}: {item.count} URLs
-                    </li>
-                ))}
-            </ul> */}
       <div className="table-responsive">
         <table className="table table-striped">
           <thead>
